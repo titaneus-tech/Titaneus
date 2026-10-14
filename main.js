@@ -1,6 +1,6 @@
 (function(){
 var email=document.body.dataset.email;
-document.querySelectorAll('[data-email]').forEach(function(a){a.href='mailto:'+email;a.textContent=email});
+document.querySelectorAll('a[data-email]').forEach(function(a){a.href='mailto:'+email;a.textContent=email});
 document.getElementById('year').textContent=new Date().getFullYear();
 var btn=document.querySelector('.nav-btn'),nav=document.getElementById('nav');
 btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
